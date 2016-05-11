@@ -6,8 +6,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('present');
-  this.route('accept');
+  this.route('index',{path:'/'},function(){
+
+  });
+  this.route('offer',{path:'/:id'}, function() {
+      this.route('present');
+      this.route('accepted');
+    });
+  
 });
 
 export default Router;

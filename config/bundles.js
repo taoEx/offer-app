@@ -33,7 +33,7 @@ module.exports = function(environment) {
         //}
         index: {
             files: [
-               "**/templates/**.js",
+               "**/templates/offer/**.js",
                "**/controllers/**.js",
                "**/components/**/**.js"
             ]
